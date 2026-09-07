@@ -1,0 +1,210 @@
+generated: '2026-09-07'
+method: probed
+source: https://addictioncampuses.com/
+name: Addiction Campuses of America well-known + contract discovery probe
+description: >-
+  Negative probe record for Addiction Campuses of America. The company was founded in Brentwood,
+  TN in 2014 as a residential behavioral-healthcare campus operator and renamed itself Vertava
+  Health on 2020-08-01. Three hosts were probed. addictioncampuses.com and www.addictioncampuses.com
+  (GoDaddy registration, Domains By Proxy registrant, SiteGround nameservers, renewed through
+  2028-06-06) answer EVERY path — including a negative-control path that cannot exist — with an
+  identical HTTP 202 SiteGround proof-of-work bot interstitial ("Robot Challenge Screen",
+  SHA-1 PoW at /.well-known/sgcaptcha/). Those 202s are challenges, not documents, and the
+  path-echo control fails, so every 2xx on those two hosts is discarded. vertavahealth.com — the
+  successor brand's host, live WordPress on WP Engine behind Cloudflare — 404s every probed path
+  and 301s its own homepage to https://connectionswellnessgroup.com/, an unrelated behavioral-health
+  provider. NOT ONE discovery document was retrieved on any host. No WellKnown, SecurityTxt,
+  AgentCard, LLMsTxt, APIsJSON or OpenAPI pointer is emitted from this probe, and none should ever
+  be emitted from it in a later round.
+
+host_status:
+  - host: addictioncampuses.com
+    controlled_by_provider: true
+    disposition: bot-challenged
+    reachable_https: true
+    note: >-
+      Every path (HTTP and HTTPS, browser UA and Googlebot UA alike) returns a 169-240 byte
+      HTTP 202 meta-refresh into /.well-known/sgcaptcha/. The challenge page is a SiteGround
+      SHA-1 proof-of-work interstitial titled "Robot Challenge Screen". Challenges are not
+      evaded, so no page body on this host was read.
+    registrar: GoDaddy.com, LLC
+    registrant_organization: Domains By Proxy, LLC
+    domain_created: '2014-06-06'
+    domain_updated: '2026-06-03'
+    domain_expires: '2028-06-06'
+    nameservers: [ns1.siteground.net, ns2.siteground.net]
+    addresses: [34.149.36.179, 34.160.81.203, 35.244.153.44, 35.227.194.51]
+  - host: www.addictioncampuses.com
+    controlled_by_provider: true
+    disposition: bot-challenged
+    reachable_https: true
+    note: 'Identical SiteGround 202 proof-of-work interstitial on every path.'
+  - host: vertavahealth.com
+    controlled_by_provider: true
+    disposition: winding-down
+    reachable_https: true
+    note: >-
+      Successor brand host (Addiction Campuses renamed to Vertava Health on 2020-08-01). Live
+      WordPress on WP Engine behind Cloudflare; the WordPress Redirection plugin 301s the
+      homepage to https://connectionswellnessgroup.com/. 404s every well-known and spec path.
+    nameservers: [rafe.ns.cloudflare.com, darl.ns.cloudflare.com]
+    addresses: [141.193.213.10, 141.193.213.11]
+
+hit_count: 0
+soft_200_control: failed
+soft_200_note: >-
+  addictioncampuses.com and www.addictioncampuses.com return HTTP 202 with an HTML bot-challenge
+  body for every path requested. A 202 carrying an interstitial is not a document; no file was
+  saved from either host.
+path_echo_control: failed
+path_echo_note: >-
+  The negative control /.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json
+  returned HTTP 202 with the same interstitial on addictioncampuses.com and
+  www.addictioncampuses.com, so those hosts answer 2xx for a path that cannot exist and every
+  2xx on them is discarded. On vertavahealth.com the same control returned 404, so that host is
+  not path-echoing and its 404s are genuine negatives.
+
+hosts:
+  - host: https://addictioncampuses.com
+    documents:
+      - {path: /.well-known/security.txt, status: 202, file: null}
+      - {path: /.well-known/openid-configuration, status: 202, file: null}
+      - {path: /.well-known/oauth-authorization-server, status: 202, file: null}
+      - {path: /.well-known/oauth-protected-resource, status: 202, file: null}
+      - {path: /.well-known/api-catalog, status: 202, file: null}
+      - {path: /.well-known/ai-plugin.json, status: 202, file: null}
+      - {path: /.well-known/ucp.json, status: 202, file: null}
+      - {path: /.well-known/acp.json, status: 202, file: null}
+      - {path: /.well-known/aauth-resource.json, status: 202, file: null}
+      - {path: /.well-known/apis.json, status: 202, file: null}
+      - {path: /apis.json, status: 202, file: null}
+      - {path: /apis.yml, status: 202, file: null}
+      - {path: /.well-known/agent-card.json, status: 202, file: null}
+      - {path: /.well-known/agent.json, status: 202, file: null}
+      - {path: /openapi.json, status: 202, file: null}
+      - {path: /llms.txt, status: 202, file: null}
+      - {path: /robots.txt, status: 202, file: null}
+      - {path: /sitemap.xml, status: 202, file: null}
+      - {path: '/.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json', status: 202, file: null}
+  - host: https://www.addictioncampuses.com
+    documents:
+      - {path: /.well-known/security.txt, status: 202, file: null}
+      - {path: /.well-known/openid-configuration, status: 202, file: null}
+      - {path: /.well-known/oauth-authorization-server, status: 202, file: null}
+      - {path: /.well-known/oauth-protected-resource, status: 202, file: null}
+      - {path: /.well-known/api-catalog, status: 202, file: null}
+      - {path: /.well-known/ai-plugin.json, status: 202, file: null}
+      - {path: /.well-known/ucp.json, status: 202, file: null}
+      - {path: /.well-known/acp.json, status: 202, file: null}
+      - {path: /.well-known/aauth-resource.json, status: 202, file: null}
+      - {path: /.well-known/apis.json, status: 202, file: null}
+      - {path: /apis.json, status: 202, file: null}
+      - {path: /apis.yml, status: 202, file: null}
+      - {path: /.well-known/agent-card.json, status: 202, file: null}
+      - {path: /.well-known/agent.json, status: 202, file: null}
+      - {path: '/.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json', status: 202, file: null}
+  - host: https://vertavahealth.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404, file: null}
+      - {path: /.well-known/openid-configuration, status: 404, file: null}
+      - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+      - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+      - {path: /.well-known/api-catalog, status: 404, file: null}
+      - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+      - {path: /.well-known/ucp.json, status: 404, file: null}
+      - {path: /.well-known/acp.json, status: 404, file: null}
+      - {path: /.well-known/aauth-resource.json, status: 404, file: null}
+      - {path: /.well-known/apis.json, status: 404, file: null}
+      - {path: /apis.json, status: 404, file: null}
+      - {path: /apis.yml, status: 404, file: null}
+      - {path: /.well-known/agent-card.json, status: 404, file: null}
+      - {path: /.well-known/agent.json, status: 404, file: null}
+      - {path: /openapi.json, status: 404, file: null}
+      - {path: /swagger.json, status: 404, file: null}
+      - {path: /api-docs, status: 404, file: null}
+      - {path: /llms.txt, status: 404, file: null}
+      - {path: /graphql, status: 404, file: null}
+      - {path: '/.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json', status: 404, file: null}
+
+contract_discovery:
+  openapi_rest:
+    result: miss
+    note: >-
+      No baseURL or servers[] host has ever been recorded for this company. /openapi.json,
+      /swagger.json, /api-docs and /llms.txt were probed on all three hosts: 202 bot-challenge on
+      the two addictioncampuses.com hosts, genuine 404 on vertavahealth.com.
+  graphql_introspection:
+    result: miss
+    note: 'No /graphql surface documented anywhere; https://vertavahealth.com/graphql returns 404.'
+  mcp_tools_list:
+    result: not-applicable
+    note: 'No MCP endpoint published or discoverable for this brand or its successor.'
+  a2a_agent_card:
+    result: miss
+    note: >-
+      /.well-known/agent-card.json and the legacy /.well-known/agent.json were probed on all three
+      hosts. vertavahealth.com 404s both; the addictioncampuses.com hosts return the same 202
+      interstitial they return for a path that cannot exist. Per the pipeline contract no a2a/
+      artifact is written.
+  ogc:
+    result: not-applicable
+    note: 'No geospatial evidence anywhere in the record or the archived site.'
+  wsdl:
+    result: miss
+    note: 'No ?wsdl / ?singleWsdl surface; no SOAP or enterprise integration section in the archive.'
+  grpc_protobuf:
+    result: miss
+    note: >-
+      No GitHub organization exists — api.github.com/orgs/{addictioncampuses, addiction-campuses,
+      vertava, vertavahealth, vertava-health} all return 404 to an authenticated request. No
+      buf.build presence.
+  packages:
+    result: miss
+    note: >-
+      npm registry search for "vertava" returns 0 packages; a search for "addiction campuses"
+      returns only unrelated third-party packages. pypi.org/pypi/vertava/json and
+      pypi.org/pypi/addictioncampuses/json both 404.
+  wordpress_rest:
+    result: 'found-but-not-a-published-api'
+    note: >-
+      https://vertavahealth.com/wp-json/ returns HTTP 200 with a stock WordPress REST API index
+      (name "Vertava Health", 250 routes across 13 namespaces: wp/v2, oembed/1.0, yoast/v1,
+      gravityforms/v2, elementor/v1, akismet/v1, redirection/v1, wpe/cache-plugin/v1 and
+      similar). This is generic WordPress and plugin CMS infrastructure present on every
+      WordPress installation, not an API this company designed, documented or offered to
+      developers. It is recorded here as an observation and is deliberately NOT registered as an
+      api entry and carries no OpenAPI or Documentation pointer.
+  archived_site:
+    result: 'no-developer-surface'
+    note: >-
+      The Internet Archive CDX index returns 4,000 distinct HTTP 200 addictioncampuses.com URLs.
+      Filtering them for /api, /apis, /developer, /developers, /docs, /swagger, /openapi,
+      /graphql, /sdk and /integrat matches exactly ONE URL — a blog post,
+      /blog/integrating-your-spouse-into-your-recovery/. The site was a WordPress marketing and
+      lead-generation site (Divi theme; et_core_page_resource query strings) for residential
+      treatment campuses. There is no developer portal, reference, or spec anywhere in the
+      archive. The last full-content snapshot is 2020-07-17 (32,685 bytes); by 2024-06-24 the
+      homepage was a 282-byte domain-parking stub redirecting to /lander.
+
+evidence:
+  - {url: 'https://addictioncampuses.com/', status: 202, note: 'SiteGround proof-of-work bot interstitial, 169 bytes, meta-refresh to /.well-known/sgcaptcha/'}
+  - {url: 'http://addictioncampuses.com/', status: 202, note: 'Same interstitial on plain HTTP'}
+  - {url: 'https://addictioncampuses.com/.well-known/sgcaptcha/?r=%2F', status: 200, note: 'Challenge page itself: title "Robot Challenge Screen", SHA-1 proof-of-work, complexity 21. Not evaded.'}
+  - {url: 'https://addictioncampuses.com/openapi.json', status: 202, note: 'Interstitial, not a spec'}
+  - {url: 'https://addictioncampuses.com/.well-known/agent-card.json', status: 202, note: 'Interstitial, not a card'}
+  - {url: 'https://addictioncampuses.com/.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json', status: 202, note: 'Negative control also 2xx — path-echo control FAILED for this host'}
+  - {url: 'https://www.addictioncampuses.com/', status: 202}
+  - {url: 'https://vertavahealth.com/', status: 301, note: 'Location: https://connectionswellnessgroup.com/ (x-redirect-by: redirection, x-powered-by: WP Engine)'}
+  - {url: 'https://connectionswellnessgroup.com/', status: 200, note: 'Unrelated behavioral-health provider the Vertava Health homepage now redirects to'}
+  - {url: 'https://vertavahealth.com/.well-known/security.txt', status: 404}
+  - {url: 'https://vertavahealth.com/openapi.json', status: 404}
+  - {url: 'https://vertavahealth.com/apis.json', status: 404}
+  - {url: 'https://vertavahealth.com/.well-known/addictioncampusesofamerica-negative-control-7f3ab91c.json', status: 404, note: 'Negative control 404s — this host is not path-echoing'}
+  - {url: 'https://vertavahealth.com/wp-json/', status: 200, note: 'Stock WordPress REST index, name "Vertava Health"; generic CMS infrastructure, not a published API'}
+  - {url: 'https://api.github.com/orgs/addictioncampuses', status: 404, note: 'Authenticated request'}
+  - {url: 'https://api.github.com/orgs/vertavahealth', status: 404, note: 'Authenticated request'}
+  - {url: 'https://registry.npmjs.org/-/v1/search?text=vertava', status: 200, note: 'total: 0'}
+  - {url: 'https://pypi.org/pypi/vertava/json', status: 404}
+  - {url: 'https://equityzen.com/company/addictioncampusesofamerica/', status: 200, note: 'Harvest source; EquityZen secondary-market listing, ticker ACOA, founded 2014, Brentwood TN'}
+  - {url: 'http://web.archive.org/cdx/search/cdx?url=addictioncampuses.com*&filter=statuscode:200&limit=4000', status: 200, note: '4,000 archived URLs, zero developer/API paths'}
+  - {url: 'http://web.archive.org/web/20240624090308id_/https://addictioncampuses.com/', status: 200, note: '282-byte parking stub redirecting to /lander'}

@@ -1,23 +1,106 @@
 aid: addictioncampusesofamerica
-name: Addictioncampusesofamerica
-description: 'Addictioncampusesofamerica is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+name: Addiction Campuses of America
+description: >-
+  Addiction Campuses of America (EquityZen ticker ACOA) was founded in 2014 in Brentwood,
+  Tennessee and owned, operated and managed residential behavioral-healthcare campuses across the
+  United States, treating substance use disorder and co-occurring mental health conditions through
+  detox, residential, partial-hospitalization and outpatient programs, several of them holding the
+  Joint Commission Gold Seal of Approval. Summit Partners invested in the company in 2018, and on
+  2020-08-01 it renamed itself Vertava Health. The successor host vertavahealth.com is still a live
+  WordPress installation but now 301-redirects its homepage to Connections Wellness Group, an
+  unrelated behavioral-health provider, and the original addictioncampuses.com answers every
+  request with a SiteGround proof-of-work bot interstitial. This is a clinical services operator,
+  not a software vendor: a full contract-discovery pass across all three hosts, the package
+  registries, GitHub and 4,000 archived URLs found no developer program, API documentation, SDK or
+  machine-readable contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/addictioncampusesofamerica/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-harvest-source-url: https://equityzen.com/company/addictioncampusesofamerica
+x-tier: profiled
+x-tier-reason: >-
+  enrichment pass 2026-09-07: full STEP 0b contract discovery run across three hosts, the package
+  registries, GitHub and the Internet Archive; no API surface found
 specificationVersion: '0.20'
 created: '2026-09-07'
 modified: '2026-09-07'
 tags:
 - Company
+- Healthcare
+- Behavioral Health
+- Addiction Treatment
+- Substance Use Disorder
+- Mental Health
+- Residential Treatment
+- Tennessee
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
+common: []
+x-successor-brand:
+  name: Vertava Health
+  renamed: '2020-08-01'
+  host: https://vertavahealth.com
+  status: >-
+    Live WordPress on WP Engine behind Cloudflare, but the homepage 301s to
+    https://connectionswellnessgroup.com/ (an unrelated behavioral-health provider) via the
+    WordPress Redirection plugin. Probed 2026-09-07.
+x-domain-status: bot-challenged
+x-domain-note: >-
+  addictioncampuses.com (created 2014-06-06, GoDaddy, registrant Domains By Proxy, SiteGround
+  nameservers, renewed through 2028-06-06) is registered and reachable but answers every path —
+  HTTP and HTTPS, browser UA and Googlebot UA alike, including a negative-control path that cannot
+  exist — with an identical 169-240 byte HTTP 202 SiteGround proof-of-work bot interstitial
+  ("Robot Challenge Screen"). Challenges are not evaded, so no page body on that host was read and
+  no 2xx from it is treated as a document. It is deliberately NOT wired as a Website pointer. The
+  Internet Archive shows the host served its last full-content snapshot on 2020-07-17 and a
+  282-byte domain-parking stub redirecting to /lander by 2024-06-24.
+x-venue-listings:
+- venue: EquityZen
   url: https://equityzen.com/company/addictioncampusesofamerica
+  status: 200
+  note: >-
+    Harvest source. A secondary-market listing page is a trading venue's page about the company,
+    not the company's own web presence, so it is recorded here rather than wired as a Website
+    pointer (roadmap#56). The venue classifies this company under "Software, Artificial
+    Intelligence, and Data and Analytics"; that classification is the venue's and is not supported
+    by anything the company published — it is a residential treatment operator.
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Addiction Campuses of America is a residential behavioral-healthcare campus operator, not a
+    software vendor — the 4,000 archived addictioncampuses.com URLs contain no /api, /developers or
+    /docs path, and the only machine-readable surface found on any of its hosts is the stock
+    WordPress REST index at https://vertavahealth.com/wp-json/, which is generic CMS plumbing
+    rather than a published API.
+  evidence:
+  - url: https://addictioncampuses.com/
+    status: 202
+  - url: https://addictioncampuses.com/openapi.json
+    status: 202
+  - url: https://addictioncampuses.com/.well-known/agent-card.json
+    status: 202
+  - url: https://vertavahealth.com/
+    status: 301
+  - url: https://vertavahealth.com/openapi.json
+    status: 404
+  - url: https://vertavahealth.com/.well-known/agent-card.json
+    status: 404
+  - url: https://vertavahealth.com/wp-json/
+    status: 200
+  - url: https://api.github.com/orgs/addictioncampuses
+    status: 404
+  - url: https://pypi.org/pypi/vertava/json
+    status: 404
+  - url: https://equityzen.com/company/addictioncampusesofamerica/
+    status: 200
+  checked: '2026-09-07'
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
