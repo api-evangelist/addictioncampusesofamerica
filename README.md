@@ -1,4 +1,4 @@
-# Addictioncampusesofamerica
+# Addiction Campuses of America
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Addictioncampusesofamerica is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/addictioncampusesofamerica
+Addiction Campuses of America (EquityZen ticker ACOA) was founded in 2014 in Brentwood, Tennessee and owned, operated and managed residential behavioral-healthcare campuses across the United States, treating substance use disorder and co-occurring mental health conditions through detox, residential, partial-hospitalization and outpatient programs, several of them holding the Joint Commission Gold Seal of Approval. Summit Partners invested in the company in 2018, and on 2020-08-01 it renamed itself Vertava Health. The successor host vertavahealth.com is still a live WordPress installation but now 301-redirects its homepage to Connections Wellness Group, an unrelated behavioral-health provider, and the original addictioncampuses.com answers every request with a SiteGround proof-of-work bot interstitial. This is a clinical services operator, not a software vendor: a full contract-discovery pass across all three hosts, the package registries, GitHub and 4,000 archived URLs found no developer program, API documentation, SDK or machine-readable contract of any kind.
+
+**Areas:** Company · Healthcare · Behavioral Health · Addiction Treatment · Substance Use Disorder · Mental Health · Residential Treatment · Tennessee
+
+## Addiction Campuses of America on APIs.io
+
+Everything profiled for Addiction Campuses of America is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/addictioncampusesofamerica/](https://apis.io/providers/addictioncampusesofamerica/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Addiction Campuses of America: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/addictioncampusesofamerica/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
